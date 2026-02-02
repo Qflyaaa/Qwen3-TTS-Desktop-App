@@ -1,0 +1,19 @@
+# 自动处理行尾符
+* text=auto
+
+# 文本文件使用 LF（Unix 风格）
+*.txt text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.bat text eol=crlf
+
+# 二进制文件
+*.wav binary
+*.pt binary
+*.safetensors binary
+*.bin binary
+*.pkl binary
+*.mp3 binary
+*.mp4 binary

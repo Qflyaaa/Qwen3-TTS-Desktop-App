@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# ========== TTS_Desktop_App 数据文件 ==========
+# 不提交生成的数据
+TTS_Desktop_App/data/outputs/*.wav
+TTS_Desktop_App/data/outputs/*.json
+TTS_Desktop_App/data/logs/*.log
+TTS_Desktop_App/data/voices/*.pt
+TTS_Desktop_App/data/voices/*_meta.json
+TTS_Desktop_App/config/app_config.json
+
+# ========== Qwen3-TTS 模型文件（排除大文件） ==========
+# 排除所有 .safetensors 模型文件
+**/*.safetensors
+
+# 排除模型目录中的权重文件
+Qwen3-TTS/Qwen3-TTS-*/model.safetensors
+Qwen3-TTS/Qwen3-TTS-*/speech_tokenizer/model.safetensors
+Qwen3-TTS/Qwen3-TTS-Tokenizer-*/model.safetensors
+
+# 但保留所有配置文件和代码
+!Qwen3-TTS/**/*.json
+!Qwen3-TTS/**/*.txt
+!Qwen3-TTS/**/*.md
+!Qwen3-TTS/**/*.py
+!Qwen3-TTS/**/*.toml
+!Qwen3-TTS/LICENSE
+
+# ========== 其他用户数据 ==========
+# 用户输入和输出文件
+input/
+output/
+voice_features/
+video/
+scripts/
+
+# ========== 音频文件（全面排除） ==========
+# 排除所有音频文件
+*.wav
+*.mp3
+*.mp4
+*.flac
+*.ogg
+*.m4a
+*.aac
+
+# ========== 权重文件（全面排除） ==========
+# 排除所有权重文件
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.h5
+*.pb
+
+# ========== 数据目录（全面排除） ==========
+# 排除所有数据目录
+voice_features/
+input/
+output/
+video/
+scripts/
+TTS_Desktop_App/data/outputs/
+TTS_Desktop_App/data/voices/
+TTS_Desktop_App/data/logs/
+TTS_Desktop_App/data/audios/
+TTS_Desktop_App/data/texts/

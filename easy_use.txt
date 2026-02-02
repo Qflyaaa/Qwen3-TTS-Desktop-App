@@ -1,0 +1,17 @@
+根据保存的语音特征以及输入文本，生成音频：
+
+python srcipts/generate_with_features.py --text-file "input/ref_text.txt" --features "voice_features/weijun.pt" --output-dir "output" --language "Chinese" --device "cuda:0"
+
+python srcipts/generate_with_features.py --text-file "input/ref_text.txt" --features "voice_features/weijun.pt"
+
+克隆语音语气调整：
+python srcipts/voice_clone_with_emotion.py --text-file "input/ref_text_2.txt" --features "voice_features/weijun.pt" --instruct "用温柔的语气，语速较慢"
+
+语音设计
+python srcipts/voice_design.py --text-file "input/ref_text.txt" --instruct "用温柔的语气，语速较慢，音调较低"
+
+python srcipts/voice_design.py --text "哥哥，你回来啦，人家等了你好久好久了，要抱抱！" --instruct "体现撒娇稚嫩的萝莉女声，音调偏高且起伏明显，营造出黏人、做作又刻意卖萌的听觉效果。"
+
+python srcipts/voice_design.py --text-file "input/ref_text.txt" --instruct "体现撒娇稚嫩的萝莉女声，音调偏高且起伏明显，营造出黏人、做作又刻意卖萌的听觉效果。"
+
+python srcipts/voice_design.py --text-file "input/ref_text.txt" --instruct "极致软糯幼女声，18岁左右的清纯山村少女音色，声音细软甜腻，像融化的棉花糖带奶香，尾音天然上翘带哭腔和鼻音，气息感重，呼吸明显可闻。音量偏低，像在耳边小声呢喃，偶尔因为羞耻或兴奋而颤抖断气。说话速度缓慢，字咬得软软的，带轻微方言感的拖长尾音（例如“呀”“嘛”“呜呜”拉长），整体听感纯欲到极致，却藏着骨子里的骚浪"
